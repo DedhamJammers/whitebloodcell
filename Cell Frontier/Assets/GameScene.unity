@@ -847,6 +847,8 @@ MonoBehaviour:
   Speed: 0
   LookPos: {x: 0, y: 0, z: 0}
   LookPlane: {fileID: 1572448584}
+  WaveProjectile: {fileID: 1232784794921682, guid: abe5aa671d6196a419381dc4cf9189a7,
+    type: 2}
 --- !u!4 &1603432934 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: abd607e384ff146f4bd418940bc2ee94, type: 3}

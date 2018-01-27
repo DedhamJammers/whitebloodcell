@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
     public float Speed;
     public Vector3 LookPos;
     public GameObject LookPlane;
+    public GameObject WaveProjectile;
     // Use this for initialization
     void Start () {
         Speed = 400f;
@@ -20,5 +21,9 @@ public class PlayerController : MonoBehaviour {
         LookPlane.transform.position = transform.position;
         GetComponent<Rigidbody>().AddForce(movement); //applys the force to the player's rigidbody
         transform.LookAt(LookPos);
+        if (Input.GetKeyDown("space"))
+        {
+            var wave = (GameObject)Instantiate(WaveProjectile,transform.position,transform.rotation);
+        }
     }
 }
