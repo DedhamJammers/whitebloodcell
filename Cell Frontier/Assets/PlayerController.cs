@@ -20,7 +20,5 @@ public class PlayerController : MonoBehaviour {
         LookPlane.transform.position = transform.position;
         GetComponent<Rigidbody>().AddForce(movement); //applys the force to the player's rigidbody
         transform.LookAt(LookPos);
-        Debug.Log(movement);
-        Debug.Log(GetComponent<Rigidbody>().velocity);
     }
 }
