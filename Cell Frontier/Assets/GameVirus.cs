@@ -15,7 +15,6 @@ public class GameVirus : MonoBehaviour {
 	}
 
 	void Awake() {
-		source.PlayOneShot (die, 1f);
 	}
 
 	// Update is called once per frame
@@ -28,7 +27,7 @@ public class GameVirus : MonoBehaviour {
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.name == "White Blood Cell") {
 			source.PlayOneShot (die, 1f);
-			Object.Destroy (this.gameObject, die.length);
+			Object.Destroy (this.gameObject);
 		}
 	}
 }
