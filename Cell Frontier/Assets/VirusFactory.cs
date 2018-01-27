@@ -11,5 +11,14 @@ public class VirusFactory : MonoBehaviour {
 		for (int y = 0; y < StartN; y++) {
 			GameObject v = Instantiate (virus);
 		}
+		StartCoroutine (Spawner());
+	}
+
+	IEnumerator Spawner() {
+		while (true) {
+			yield return new WaitForSeconds (1);
+			for (int y = 0; y < ViriiPerS; y++)
+				Instantiate (virus);
+		}
 	}
 }
