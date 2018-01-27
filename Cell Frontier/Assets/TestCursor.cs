@@ -18,7 +18,6 @@ public class TestCursor : MonoBehaviour {
         {
             if (hit.transform.name == "LookPlane")
             {
-                Debug.Log("1");
                 Player.GetComponent<PlayerController>().LookPos = new Vector3(hit.point.x, hit.point.y + 1, hit.point.z);
             }
         }
