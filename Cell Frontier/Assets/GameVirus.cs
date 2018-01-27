@@ -29,6 +29,10 @@ public class GameVirus : MonoBehaviour {
         if (col.gameObject.name == "White Blood Cell") {
             Die();
         }
+        
+    }
+    void OnTriggerEnter(Collider col)
+    {
         if (col.gameObject.tag == "Projectile")
         {
             Die();
