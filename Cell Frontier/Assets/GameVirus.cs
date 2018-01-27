@@ -9,7 +9,7 @@ public class GameVirus : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		source = GameObject.Find ("Sound Manager").GetComponent<AudioSource>();
+		source = GameObject.Find ("Sound Manager").GetComponent<AudioSource> ();
 	}
 
 	void Awake() {
