@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        FollowPos = new Vector3(Player.transform.position.x,Player.transform.position.y+22,Player.transform.position.z-4); //sets a vector3 to the prefered offset off 
-        transform.position = FollowPos;
+        //FollowPos = new Vector3(Player.transform.position.x,Player.transform.position.y+22,Player.transform.position.z-4); //sets a vector3 to the prefered offset off 
+        //transform.position = FollowPos;
 	}
 }
