@@ -11,10 +11,14 @@ public class damage : MonoBehaviour
 
     void Update()
     {
-        healthbar.transform.localScale = new Vector3(currentHealth / 100f, 1, 1);
+        healthbar.transform.localScale = new Vector3(currentHealth / 100, 1, 1);
         if (GameObject.FindGameObjectsWithTag("Virus").Length >= 1)
         {
             currentHealth -= 5 * Time.deltaTime;
+
+            {
+                
+            }
         }
     }
 
