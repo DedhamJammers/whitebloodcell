@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 23819138781386486}
   - component: {fileID: 54770156602988450}
   - component: {fileID: 114082170568335500}
+  - component: {fileID: 136469294282600786}
   m_Layer: 0
   m_Name: Wave
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 049a4bfc64293fe47b023487aa50fe82, type: 3}
+  - {fileID: 2100000, guid: 41ef2bc4cf94f6f4bae75552752dfbbc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,7 +84,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1232784794921682}
-  m_Mesh: {fileID: 4300000, guid: 049a4bfc64293fe47b023487aa50fe82, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 9a16d8dc6c35d7c4db6db5957edb1e2f, type: 3}
 --- !u!54 &54770156602988450
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -111,3 +112,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsed: 0
+--- !u!136 &136469294282600786
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232784794921682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.4148145
+  m_Height: 1.0000001
+  m_Direction: 1
+  m_Center: {x: -1.444114, y: -0.0000000860759, z: 0.00000047683716}

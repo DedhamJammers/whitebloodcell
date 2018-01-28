@@ -6,7 +6,7 @@ public class WaveScript : MonoBehaviour {
     public float elapsed;
 	// Use this for initialization
 	void Start () {
-        transform.eulerAngles += new Vector3(-90,0,90);
+        transform.eulerAngles += new Vector3(0,90,0);
         GetComponent<Rigidbody>().AddForce(-transform.right*20,ForceMode.Impulse);
         Destroy(gameObject,0.8f);
 	}
