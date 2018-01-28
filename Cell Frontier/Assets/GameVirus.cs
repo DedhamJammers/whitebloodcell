@@ -27,8 +27,19 @@ public class GameVirus : MonoBehaviour {
 	//Remove virus if it collides with the white blood cell
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.name == "White Blood Cell") {
-			source.PlayOneShot (die, 1f);
-			Object.Destroy (this.gameObject);
+            Die();
 		}
 	}
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Projectile")
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        source.PlayOneShot(die, 1f);
+        Object.Destroy(this.gameObject);
+    }
 }
