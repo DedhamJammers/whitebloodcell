@@ -9,7 +9,7 @@ public class VirusFactory : MonoBehaviour {
 	public GameObject virus;
 	void Start() {
 		for (int y = 0; y < StartN; y++) {
-			Instantiate (virus);
+			GameObject v = Instantiate (virus);
 		}
 		StartCoroutine (Spawner());
 	}

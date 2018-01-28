@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour {
         transform.LookAt(LookPos);
         if (Input.GetKey("space")&&CanFire==true)
         {
-            Instantiate(WaveProjectile,transform.position,transform.rotation);
+            var wave = (GameObject)Instantiate(WaveProjectile,transform.position,transform.rotation);
             StartCoroutine(Reload());
             
         }
