@@ -22,6 +22,8 @@ public class GameVirus : MonoBehaviour {
 	void Update () {
 		Vector3 accel = new Vector3 (Random.value-0.5f, 0, Random.value-0.5f);
 		GetComponent<Rigidbody>().AddForce(accel, ForceMode.VelocityChange);
+		if (GetComponent<Rigidbody> ().transform.position.y < 0)
+			Die ();
 	}
 
 	//Remove virus if it collides with the white blood cell
