@@ -14,7 +14,9 @@ public class SceneSwitcher : MonoBehaviour {
 		damage d = GameObject.Find ("healthbar").GetComponent<damage>();
 		if (d.GetHealth () <= 0)
 			SceneManager.LoadScene ("Menu");
-		
+        Antibody a = GameObject.FindGameObjectWithTag("Slider").GetComponent<Antibody>();
+        if (a.GetTime() >= 600)
+            SceneManager.LoadScene("Menu");
 	}
     public void SwitchToGameScene()
     {

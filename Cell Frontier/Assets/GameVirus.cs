@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameVirus : MonoBehaviour {
 	public Vector3 movement;
 	public AudioSource source;
 	public AudioClip die;
-	private damage healthbar;
+	public damage healthbar;
+    public Antibody wintime;
 
 	// Use this for initialization
 	void Start () {
 		source = GameObject.Find ("Sound Manager").GetComponent<AudioSource> ();
 		healthbar = GameObject.Find ("healthbar").GetComponent<damage> ();
+        wintime = GameObject.FindGameObjectWithTag ("Slider").GetComponent<Antibody> ();
 	}
 
 	void Awake() {
@@ -44,7 +47,9 @@ public class GameVirus : MonoBehaviour {
     public void Die()
     {
 		healthbar.BumpHealth ();
+
         source.PlayOneShot(die, 1f);
         Object.Destroy(this.gameObject);
+        wintime.BumpTime ();
     }
 }
