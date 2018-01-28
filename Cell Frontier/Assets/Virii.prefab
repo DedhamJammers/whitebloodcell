@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114101374850262868}
   m_Layer: 0
   m_Name: Virii
-  m_TagString: Untagged
+  m_TagString: Virus Count
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

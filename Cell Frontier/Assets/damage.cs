@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Damage : MonoBehaviour
+public class damage : MonoBehaviour
 {
     public float startingHealth = 100;
     public float currentHealth;
