@@ -6,10 +6,12 @@ public class GameVirus : MonoBehaviour {
 	public Vector3 movement;
 	public AudioSource source;
 	public AudioClip die;
+	private damage healthbar;
 
 	// Use this for initialization
 	void Start () {
 		source = GameObject.Find ("Sound Manager").GetComponent<AudioSource> ();
+		healthbar = GameObject.Find ("healthbar").GetComponent<damage> ();
 	}
 
 	void Awake() {
@@ -41,6 +43,7 @@ public class GameVirus : MonoBehaviour {
     }
     public void Die()
     {
+		healthbar.BumpHealth ();
         source.PlayOneShot(die, 1f);
         Object.Destroy(this.gameObject);
     }

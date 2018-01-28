@@ -7,6 +7,7 @@ public class damage : MonoBehaviour
 	public float HealthThreshold;
     public GameObject healthbar;
 	public float DamageDelta;
+	public float HealthBump;
 
     void Update()
     {
@@ -23,5 +24,9 @@ public class damage : MonoBehaviour
     }
 
 	public float GetHealth() {return currentHealth;}
+	public void BumpHealth() {
+		currentHealth += HealthBump;
+		Mathf.Clamp (value: currentHealth, min: 0, max: StartingHealth);
+	}
 }
 

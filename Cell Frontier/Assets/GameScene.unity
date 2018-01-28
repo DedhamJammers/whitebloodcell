@@ -948,6 +948,7 @@ MonoBehaviour:
   HealthThreshold: 25
   healthbar: {fileID: 1427924535}
   DamageDelta: 2.5
+  HealthBump: 0.25
 --- !u!1 &1463402611
 GameObject:
   m_ObjectHideFlags: 0
