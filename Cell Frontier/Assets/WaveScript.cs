@@ -13,7 +13,7 @@ public class WaveScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.localScale += new Vector3(Time.deltaTime*4,Time.deltaTime*4,Time.deltaTime*4);
+        transform.localScale += new Vector3(Time.deltaTime*3.5f,Time.deltaTime*3.5f,Time.deltaTime*3.5f);
 	}
     
 }
