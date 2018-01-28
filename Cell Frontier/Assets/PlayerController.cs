@@ -8,9 +8,13 @@ public class PlayerController : MonoBehaviour {
     public Vector3 LookPos;
     public GameObject LookPlane;
     public GameObject WaveProjectile;
+    public bool CanFire;
+    public float FireRate;
     // Use this for initialization
     void Start () {
         Speed = 400f;
+        FireRate = 8;
+        CanFire = true;
 	}
 	
 	// Update is called once per frame
@@ -21,9 +25,17 @@ public class PlayerController : MonoBehaviour {
         LookPlane.transform.position = transform.position;
         GetComponent<Rigidbody>().AddForce(movement); //applys the force to the player's rigidbody
         transform.LookAt(LookPos);
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKey("space")&&CanFire==true)
         {
             var wave = (GameObject)Instantiate(WaveProjectile,transform.position,transform.rotation);
+            StartCoroutine(Reload());
+            
         }
+    }
+    IEnumerator Reload()
+    {
+        CanFire = false;
+        yield return new WaitForSeconds(1/FireRate);
+        CanFire = true;
     }
 }

@@ -7,13 +7,13 @@ public class WaveScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         transform.eulerAngles += new Vector3(-90,0,90);
-        GetComponent<Rigidbody>().AddForce(-transform.right*10,ForceMode.Impulse);
-        Destroy(gameObject,1.2f);
+        GetComponent<Rigidbody>().AddForce(-transform.right*20,ForceMode.Impulse);
+        Destroy(gameObject,0.8f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.localScale += new Vector3(Time.deltaTime*2,Time.deltaTime*2,Time.deltaTime*2);
+        transform.localScale += new Vector3(Time.deltaTime*4,Time.deltaTime*4,Time.deltaTime*4);
 	}
     
 }
