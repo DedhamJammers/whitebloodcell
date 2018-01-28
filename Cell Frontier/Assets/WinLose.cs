@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Win-Lose : MonoBehaviour {
+public class WinLose : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
