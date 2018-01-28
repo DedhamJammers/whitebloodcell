@@ -8,13 +8,16 @@ public class SceneSwitcher : MonoBehaviour {
 	void Start () {
 		
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
+		damage d = GameObject.Find ("healthbar").GetComponent<damage>();
+		if (d.GetHealth () <= 0)
+			SceneManager.LoadScene ("Menu");
 		
 	}
     public void SwitchToGameScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("GameScene");
             }
 }

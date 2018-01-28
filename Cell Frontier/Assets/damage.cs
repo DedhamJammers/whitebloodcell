@@ -21,5 +21,7 @@ public class damage : MonoBehaviour
     {
         currentHealth = StartingHealth;
     }
+
+	public float GetHealth() {return currentHealth;}
 }
 
