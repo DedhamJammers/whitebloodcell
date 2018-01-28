@@ -196,10 +196,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &165817914
@@ -256,7 +252,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a0f4e508578274697023836a394a66, type: 3}
   m_IsPrefabParent: 0
->>>>>>> 518067ef880a372dc912dbff2d35be8498173223
 --- !u!1 &207197164
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,11 +359,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 6
-=======
   m_RootOrder: 7
->>>>>>> 518067ef880a372dc912dbff2d35be8498173223
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670751577
 GameObject:
@@ -512,11 +503,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.0003773, z: 1.0003773}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 3
-=======
   m_RootOrder: 4
->>>>>>> 518067ef880a372dc912dbff2d35be8498173223
   m_LocalEulerAnglesHint: {x: 75, y: -3, z: 0}
 --- !u!45 &866876196
 Skybox:
@@ -621,11 +608,7 @@ Transform:
   m_LocalScale: {x: 40, y: 1, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 2
-=======
   m_RootOrder: 3
->>>>>>> 518067ef880a372dc912dbff2d35be8498173223
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985142592
 GameObject:
@@ -793,11 +776,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 1
-=======
   m_RootOrder: 2
->>>>>>> 518067ef880a372dc912dbff2d35be8498173223
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1352979174
 GameObject:
@@ -848,8 +827,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1352979174}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-=======
 --- !u!1001 &1366264397
 Prefab:
   m_ObjectHideFlags: 0
@@ -970,7 +947,6 @@ MonoBehaviour:
   StartingHealth: 100
   HealthThreshold: 25
   healthbar: {fileID: 1427924535}
->>>>>>> 7e6dc4987d4f7996dccd3b69a3fa2e9d546cd9d4
 --- !u!1 &1463402611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,11 +1024,7 @@ Transform:
   m_LocalScale: {x: 60, y: 0.5, z: 48}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 4
-=======
   m_RootOrder: 5
->>>>>>> 518067ef880a372dc912dbff2d35be8498173223
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1572448586
 MeshRenderer:
@@ -1196,10 +1168,6 @@ Transform:
   - {fileID: 670751578}
   - {fileID: 985142593}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2122815060 stripped
@@ -1233,4 +1201,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
->>>>>>> 518067ef880a372dc912dbff2d35be8498173223
