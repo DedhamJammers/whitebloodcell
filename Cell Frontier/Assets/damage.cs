@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class damage : MonoBehaviour
+public class Damage : MonoBehaviour
 {
     public float startingHealth = 100;
     public float currentHealth;
@@ -11,20 +8,16 @@ public class damage : MonoBehaviour
 
     void Update()
     {
-        healthbar.transform.localScale = new Vector3(currentHealth / 100f, 1, 1);
-        if (GameObject.FindGameObjectsWithTag("Virus").Length >= 1)
+        healthbar.transform.localScale = new Vector3(Mathf.Clamp(value: currentHealth / 100f, min: 0, max: 1), y: 1, z: 1);
+        if (GameObject.FindGameObjectsWithTag(tag: "Virus Count").Length >= 25)
         {
             currentHealth -= 5 * Time.deltaTime;
         }
     }
-
-    bool isdead;
-    bool isdamaged;
+    
     void Awake()
     {
         currentHealth = startingHealth;
-        transform.localScale = new Vector3(1, 1, 1);
     }
-
 }
 
