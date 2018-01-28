@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60560a2b36c7444f8ae7af4468f25e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartN: 10
-  ViriiPerS: 1
+  StartN: 15
+  ViriiPerS: 2
   virus: {fileID: 1809636129748144, guid: 470700c657b774a9c950a7cc641431e0, type: 2}
 --- !u!4 &58855969
 Transform:
