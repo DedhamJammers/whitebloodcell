@@ -15,7 +15,6 @@ public class WaveScript : MonoBehaviour {
 	void Update () {
         transform.localScale += new Vector3(Time.deltaTime*3.5f,Time.deltaTime*3.5f,Time.deltaTime*3.5f);
 
-
 	}
     
 }
